@@ -2,6 +2,5 @@
 Tool for image dataset capture
 
 ## Environment variables
-`UPLOAD_DIR`: Directory to where to save dataset
-`CACHE_DIR`: Directory where to store capture journal and store temporary images
+`UPLOAD_DIR`: Directory to where to save dataset. Defaults to ./data
 `CONFIG_PATH`: Path to the config.json file. Defaults to ./config.json

@@ -36,6 +36,8 @@ def string_to_seconds(string: str) -> int:
     """
     unit = string[-1]
     quantity = int(string[:-1])
+    if unit == "s":
+        return quantity
     if unit == "m":
         return quantity * 60
     elif unit == "h":
