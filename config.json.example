@@ -1,0 +1,6 @@
+{
+    "dataset_name": "example-dataset",
+    "img_interval": "1h",
+    "period": "3d",
+    "batch_num": 1
+}
