@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  rack-capture:
+    container_name: rack-capture-container
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    envrionment: 
+      - UPLOAD_DIR=/app/uploads
+      - CONFIG_PATH=/app/config/config.json
+    volumes:
+      - ./config.json:/app/config/config.json
+      - ./data:/app/uploads
